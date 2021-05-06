@@ -26,7 +26,7 @@ public class Author {
 	}
 	public void setAuthorId(int authorId) {
 		
-		
+		sddddd
 		AuthorId = authorId;
 	}
 	public String getAuthorName() {
