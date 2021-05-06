@@ -26,7 +26,11 @@ public class Author {
 	}
 	public void setAuthorId(int authorId) {
 		
+<<<<<<< HEAD
 		sdfsfdfdf
+=======
+		sddddd
+>>>>>>> cff58dfe78f67a9ba67685cbe7efc40571dd90f2
 		AuthorId = authorId;
 	}
 	public String getAuthorName() {
