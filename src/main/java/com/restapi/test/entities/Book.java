@@ -1,15 +1,11 @@
 package com.restapi.test.entities;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
-
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 
 @Entity
@@ -20,11 +16,9 @@ public class Book {
 	@Column(name="book_id")
 	private int id;
 	private String name;
-	@OneToOne(cascade=CascadeType.ALL)
-	@JsonManagedReference
-	private Author author;
+	private String author;
 	
-
+	
 	
 	public int getId() {
 		return id;
@@ -38,13 +32,13 @@ public class Book {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Author getAuthor() {
+	public String getAuthor() {
 		return author;
 	}
-	public void setAuthor(Author author) {
+	public void setAuthor(String author) {
 		this.author = author;
 	}
-	public Book(int id, String name, Author author) {
+	public Book(int id, String name, String author) {
 		super();
 		this.id = id;
 		this.name = name;
