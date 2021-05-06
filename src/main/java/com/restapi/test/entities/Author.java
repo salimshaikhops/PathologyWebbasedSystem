@@ -25,10 +25,8 @@ public class Author {
 		return AuthorId;
 	}
 	public void setAuthorId(int authorId) {
-		System.out.println("sfs");
-		System.out.println("sfs");
-		System.out.println("sfs");
-		System.out.println("sfs");
+		
+		
 		AuthorId = authorId;
 	}
 	public String getAuthorName() {
